@@ -28,13 +28,23 @@
         box-shadow: 0 .5rem 1rem rgba($color-black,.25);
     }
 
-    &-white{
+    &--white{
         background-color: $color-white;
         color: $color-text-grey;
 
         &::after{
             background-color: $color-white;
         }
+    }
+
+    &--green{
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after{
+            background-color: $color-primary;
+        }
+
     }
 
     &::after{
@@ -50,7 +60,7 @@
         transition: all .3s;
     }
 
-    &-animated{
+    &--animated{
         animation: moveInbottom 1s .75s ease-in-out;
         animation-fill-mode: backwards;
     }
@@ -79,3 +89,5 @@
         transform: translateY(0);
     }
 }
+
+
