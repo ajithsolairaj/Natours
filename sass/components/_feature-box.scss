@@ -10,6 +10,10 @@
     backface-visibility: hidden;
     overflow: hidden;
 
+    @include respond(tab-port){
+        padding: 2rem;
+    }
+
     &__icon{
         font-size: 6rem;
         margin-bottom: .5rem;
@@ -17,6 +21,11 @@
         background-image: linear-gradient(to right, $color-primary-light,$color-primary-dark);
         -webkit-background-clip: text;
         color: transparent;
+
+        @include respond(tab-port){
+            margin-bottom: 0;
+        }
+    
     }
 
     &:hover{

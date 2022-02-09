@@ -10,6 +10,7 @@
         transition: all .3s;
         font-size: $default-font-size;
         position: relative;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
 
         border: none;
